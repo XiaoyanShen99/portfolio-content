@@ -99,7 +99,7 @@ footer{
 .caption{
 	grid-column:4/6;
 	font-size: 18px;
-	background-color: rgba(255, 255, 255, 0.741);
+	background-color: rgba(255, 255, 255);
 	text-align: center;
 	z-index: 1;
 	padding: 10px 5px;
