@@ -1,5 +1,5 @@
 body{
-	background-color: rgba(67, 67, 76, 0.762);
+	background-color: rgba(160, 160, 170, 0.762);
 	font-family: "Book Antiqua" , Arial, "Times New Roman";
 }
 
@@ -42,6 +42,11 @@ nav li a{
 
 p{
 	font-size: 20px;
+}
+
+h1{
+	font-size: 25px;
+	justify-content: center;
 }
 
 img{
