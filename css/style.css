@@ -10,13 +10,17 @@ header.member{
 	align-items: center;
 }
 
+header.member nav li a {
+	color: white;
+	font-weight: bold;
+}
 
 header p{
 	width: 80%;
 	margin: 50px 0 auto 10px;
 	padding: 5px;
 	color:black;
-	background-color:rgba(255, 255, 255, 0.551);
+	background-color:rgba(255, 255, 255, 0.853);
 	font-weight: bold;
 }
 
