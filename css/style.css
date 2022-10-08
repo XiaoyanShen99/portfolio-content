@@ -20,7 +20,7 @@ header p{
 	margin: 50px 0 auto 10px;
 	padding: 5px;
 	color:black;
-	background-color:rgba(255, 255, 255, 0.853);
+	background-color:rgba(255, 255, 255, 0.741);
 	font-weight: bold;
 }
 
@@ -99,7 +99,7 @@ footer{
 .caption{
 	grid-column:4/6;
 	font-size: 18px;
-	background-color: aliceblue;
+	background-color: rgba(255, 255, 255, 0.741);
 	text-align: center;
 	z-index: 1;
 	padding: 10px 5px;
