@@ -10,10 +10,6 @@ header.member{
 	align-items: center;
 }
 
-header.member nav li a {
-	color: white;
-	font-weight: bold;
-}
 
 header p{
 	width: 80%;
@@ -37,6 +33,7 @@ nav li{
 nav li a{
 	color:rgb(48, 27, 27);
 	text-decoration: none;
+	font-weight: bold;
 }
 
 .active{
