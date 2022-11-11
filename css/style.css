@@ -22,7 +22,7 @@ header{
 }
 
 header p{
-	font-size: 16px;
+	font-size: 14px;
 	width: 80%;
 	margin: 50px 0 auto 10px;
 	padding: 5px;
@@ -138,9 +138,13 @@ footer a:visited{
 
 /* HOME style */
 
+main.home{
+	text-align: center;
+}
 
 .phil{
 	margin:0 30px;
+	text-align: left;
 }
 
 .phil i{
@@ -165,6 +169,7 @@ footer a:visited{
 .events aside{
 	text-align: right;
 	margin-bottom: 20px;
+	margin-right: 8px;
 }
 
 .events aside a {
