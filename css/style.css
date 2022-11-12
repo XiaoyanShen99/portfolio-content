@@ -250,9 +250,9 @@ p.shows{
 div.acn{
 	margin:10px;
 	display: grid;
-	grid-column: 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
 	align-items: center;
-	justify-content: center;
+	justify-items: center;
 }
 
 h1.acn{
