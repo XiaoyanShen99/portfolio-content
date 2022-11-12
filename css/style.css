@@ -12,15 +12,6 @@ header{
 	justify-content: right;
 }
 
-@keyframes move{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
-}
-
 header p{
 	font-size: 14px;
 	width: 80%;
@@ -83,6 +74,15 @@ img:hover{
 	border: 2px dotted black;
 }
 
+@keyframes move{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
 @keyframes float1 {
 	0% {
 	  transform: translatey(0px);
@@ -99,9 +99,9 @@ img:hover{
 	100% {
 	  transform: translatey(0px);
 	}
-  }
+}
 
-  @keyframes float2 {
+@keyframes float2 {
 	0% {
 	  transform: translatex(0px);
 	}
@@ -117,7 +117,7 @@ img:hover{
 	100% {
 	  transform: translatex(0px);
 	}
-  }
+}
 
 footer{
 	font-size: 12px;
@@ -136,9 +136,14 @@ footer a:visited{
 	color:aquamarine;
 }
 
+
 /* HOME style */
 
 main.home{
+	text-align: center;
+}
+
+.howwestart{
 	text-align: center;
 }
 
@@ -154,7 +159,6 @@ main.home{
 .phil .quote{
 	text-align: right;
 }
-
 
 
 /* EVENTS style */
@@ -314,11 +318,15 @@ img.workplace{
 	} */
 }
 
+
+
 @media all and (min-width:700px) {
 	header.team{
 		height: 50vh;
 	}
 }
+
+
 
 @media (prefers-reduced-motion) {
 	header p, .phil i, .events main i, img.acn {
