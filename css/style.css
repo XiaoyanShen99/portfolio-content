@@ -316,7 +316,7 @@ img.workplace{
 }
 
 @media (prefers-reduced-motion) {
-	* {
+	header p, .phil i, .events main i, img.acn {
 	 animation:none;
 	}
 
