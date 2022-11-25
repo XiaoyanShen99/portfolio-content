@@ -1,11 +1,35 @@
 body{
 	display: grid;
+	justify-content: center;
 	font-family: 'Playfair Display', serif, monospace, "Book Antiqua" , Arial, "Times New Roman";
 }
 
+.skip a{
+	background: white;
+	left: 0;
+	padding: 6px;
+	-webkit-transition: top 1s ease-out;
+	transition: top 1s ease-out;
+	z-index: 1;
+	position: absolute;
+	left: -500px;
+	top: -40px;
+  }
+  
+  .skip a:focus{
+	background: white;
+	top: 0;
+	left: 0;
+	padding: 6px;
+	-webkit-transition: top 1s ease-out;
+	transition: top 1s ease-out;
+	z-index: 1;
+	position: absolute;
+  }
+
 header{
 	font-size: 14px;
-	height: 20vh;
+	height: 12vh;
 	background-image: url("../images/bcg.jpg");
 	background-size:cover;
 	align-items: center;
@@ -32,7 +56,8 @@ nav{
 }
 
 nav li{
-	display: inline;
+	display: inline-flex;
+	flex-direction: row;
 	padding: 0 10px;
 }
 
@@ -147,6 +172,10 @@ main.home{
 	text-align: center;
 }
 
+img.newsroom{
+	margin-bottom: 20px;
+}
+
 .phil{
 	margin:0 30px;
 	text-align: left;
@@ -156,8 +185,15 @@ main.home{
 	animation: float1 6s ease-in-out infinite;
 }
 
+.phil p:first-child{
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+
 .phil .quote{
 	text-align: right;
+	margin-top: 20px;
 }
 
 
@@ -303,7 +339,21 @@ form button{
 }
 
 
-@media all and (min-width:500px) {
+@media all and (min-width:700px) {
+	main p{
+		font-size: 20px;
+		margin:auto 25px;
+	}
+
+	nav a{
+		font-size: 18px;
+	}
+
+	/* Team */
+	header.team p{
+		font-size: 18px;
+	}
+
 	.gallery{
 		display: flex;
 		flex-direction: row;
@@ -320,16 +370,35 @@ form button{
 		min-height: 275px;
 	}
 
+	/* Home */
+	.home main p{
+		font-size: 20px;
+	}
+
+	img.newsroom{
+		width: 70vw;
+	}
+
+	.home h1{
+		font-size: 24px;
+	}
+
+	.home p.howwestart{
+		font-size: 22px;
+		margin: 10px;
+	}
+
 
 	/* EVENTS style */
 
-	/* .events main{
-		display: grid;
-		grid-template-columns: 1fr 3fr 3fr 1fr;
-		grid-template-rows: auto;
+	.events img{
+		margin: 15px auto;
+		width: 60vw;	
 	}
 
-	img.event1, img.event3{
+
+
+	/* img.event1, img.event3{
 		grid-column: 2/3;
 		width: 100%;
 	}
@@ -337,21 +406,131 @@ form button{
 	img.event2{
 		grid-column: 3/4;
 		width: 100%;
+	}
+
+
+	footer, footer p{
+		font-size:16px;
 	} */
 }
 
 
 
-@media all and (min-width:700px) {
+@media all and (min-width:1000px) {
+	/* Home */
+	.home header{
+		width: 100vw;
+	}
+
+	.home img.newsroom{
+		width: 45vw;
+		margin-bottom: 15px;
+	}
+
+	.home main{
+		display: grid;
+		row-gap:20px;
+		column-gap: 10px;
+		width: 90vw;
+		justify-items: center;
+		align-items: center;
+		grid-template-columns: 1fr 1fr;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.home .div2{
+		grid-column: 1/-1 ;
+	}
+
+	.home .div3 img{
+		width: 45vw;
+	}
+
+	.home .div1{
+		grid-column: 1/-1;
+	}
+
+	.home .div3{
+		grid-column: 1/2;
+	}
+
+	.home .div4{
+		grid-column: 2/3;
+	}
+
+	#philquote {
+		line-height: 200%;
+	}
+
+	.div4 h1{
+		margin-bottom: 30px;
+	}
+
+	.home .div5{
+		grid-column: 1/-1;
+		grid-row: 4/5;
+		margin: 20px 15px;
+	}
+
+	/* TEAM */
 	header.team{
 		height: 50vh;
 	}
+
+	header.team p{
+		font-size: 22px;
+	}
+
+	h1.team{
+		font-size: 24px;
+		margin: 15px;
+	}
+
+	.team figure{
+		margin-bottom: 30px;
+	}
+
+	.gallery figcaption{
+		font-size: 18px;
+	}
+
 
 	/* About */
 	form{
 		width:50vw;
 		justify-self: center;
 	}
+
+	/* EVENT */
+	.events main{
+		display: grid;
+		font-size: 20px;
+		width: 90vw;
+		grid-template-columns: 1fr 1fr;
+		justify-items: center;
+		align-items: stretch;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.events img{
+		width:40vw;
+	}
+
+	.events .div1{
+		grid-column: 1/2;
+	}
+
+	.event .div2{
+		grid-column: 2/3;
+	}
+
+	.events .div3{
+		width: 50vw;
+		grid-column: 1/-1;
+	}
+
 }
 
 
