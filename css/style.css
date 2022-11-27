@@ -283,8 +283,13 @@ main.about{
 	text-align: center;
 }
 
+main.about h1.shows{
+	margin:20px 0 10px 0;
+}
+
 p.shows{
 	text-align: center;
+	line-height: 200%;
 }
 
 div.acn{
@@ -314,6 +319,8 @@ img.workplace{
 }
 
 form{
+	margin-left: auto;
+	margin-right: auto;
 	font-size: 14px;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -323,7 +330,7 @@ form{
 form h2{
 	font-size: 16px;
 	font-style: italic;
-	margin: 10px 0;
+	margin: 20px 0 10px 0;
 	grid-column: 1/-1;
 }
 
@@ -396,22 +403,13 @@ form button{
 		width: 60vw;	
 	}
 
-
-
-	/* img.event1, img.event3{
-		grid-column: 2/3;
-		width: 100%;
+	/* About */
+	div.acn{
+		width: 50vw;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
-	img.event2{
-		grid-column: 3/4;
-		width: 100%;
-	}
-
-
-	footer, footer p{
-		font-size:16px;
-	} */
 }
 
 
@@ -503,6 +501,10 @@ form button{
 	}
 
 	/* EVENT */
+	.events header{
+		width: 100vw;
+	}
+
 	.events main{
 		display: grid;
 		font-size: 20px;
@@ -529,6 +531,27 @@ form button{
 	.events .div3{
 		width: 50vw;
 		grid-column: 1/-1;
+	}
+
+	/* About */
+	div.acn{
+		width: 30vw;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.about .container{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		align-items: end;
+	}
+
+	.about .container .div1{
+		grid-column: 1/2;
+	}
+
+	.about .container .div2{
+		grid-column: 2/3;
 	}
 
 }
