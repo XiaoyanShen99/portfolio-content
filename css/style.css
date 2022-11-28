@@ -249,6 +249,7 @@ header.team{
 
 .team figure{
 	position: relative;
+
 	margin: 12px;
 	padding: 0 0 10px 0;
 	flex-basis: 100%;
@@ -268,7 +269,6 @@ header.team{
 	margin: 0 0 0 -3px;
 	padding: 1px;
 	width: 100%;
-	max-width: 500px;
 	height: 100%;
 }
 
@@ -293,11 +293,13 @@ p.shows{
 }
 
 div.acn{
-	margin:10px;
+	width: 70vw;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	align-items: center;
 	justify-items: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 h1.acn{
@@ -309,6 +311,7 @@ img.acn{
 	grid-column: 2/3;
 	width:120px;
 	animation: float2 6s ease-in-out infinite;
+	padding: 15px;
 }
 
 img.acn:hover{
@@ -342,7 +345,7 @@ form label{
 form button{
 	grid-column: 1/-1;
 	margin:5px 0;
-	width: 50px;
+	width: auto;
 	justify-self: center;
 }
 
@@ -373,7 +376,8 @@ form button{
 	}
 
 	.team figure{
-		flex-basis: 500px;
+		/* flex-basis: 500px; */
+		max-width: 650px;
 	}
 
 	.team img{
@@ -385,7 +389,7 @@ form button{
 		font-size: 20px;
 	}
 
-	img.newsroom{
+	img.newsroom, img.don-quixote{
 		width: 70vw;
 	}
 
@@ -396,6 +400,11 @@ form button{
 	.howwestart{
 		font-size: 22px;
 		margin: 10px;
+	}
+
+	.home p, .home i{
+		margin-left: 30px;
+		margin-right: 30px;
 	}
 
 
@@ -496,6 +505,7 @@ form button{
 
 	.team figure{
 		margin-bottom: 30px;
+		max-width: 475px;
 	}
 
 	.gallery figcaption{
