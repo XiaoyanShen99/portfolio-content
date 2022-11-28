@@ -413,6 +413,10 @@ form button{
 		margin-right: auto;
 	}
 
+	form{
+		width: 50vw;
+	}
+
 }
 
 /* ============ */
@@ -557,6 +561,10 @@ form button{
 
 	.about .container .div2{
 		grid-column: 2/3;
+	}
+
+	form{
+		width: 35vw;
 	}
 
 }
