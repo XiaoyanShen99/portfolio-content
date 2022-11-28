@@ -346,7 +346,9 @@ form button{
 	justify-self: center;
 }
 
-
+/* =========== */
+/* tablet view */
+/* =========== */
 @media all and (min-width:700px) {
 	main p{
 		font-size: 20px;
@@ -391,13 +393,13 @@ form button{
 		font-size: 24px;
 	}
 
-	.home p.howwestart{
+	.howwestart{
 		font-size: 22px;
 		margin: 10px;
 	}
 
 
-	/* EVENTS style */
+	/* EVENTS */
 
 	.events img{
 		margin: 15px auto;
@@ -413,7 +415,9 @@ form button{
 
 }
 
-
+/* ============ */
+/* desktop view */
+/* ============ */
 
 @media all and (min-width:1000px) {
 	/* Home */
@@ -544,7 +548,7 @@ form button{
 	.about .container{
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		align-items: end;
+		align-items: stretch;
 	}
 
 	.about .container .div1{
