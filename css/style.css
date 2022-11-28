@@ -302,6 +302,7 @@ div.acn{
 
 h1.acn{
 	grid-column: 1/2;
+	line-height: 150%;
 }
 
 img.acn{
