@@ -306,9 +306,10 @@ h1.acn{
 
 img.acn{
 	grid-column: 2/3;
-	width:120px;
+	max-width:70%;
 	animation: float2 6s ease-in-out infinite;
 	padding: 15px;
+	min-width: 50%;
 }
 
 
