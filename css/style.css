@@ -236,6 +236,10 @@ header.team{
 	align-items: center;
 }
 
+.gallery img:hover{
+	border: solid white 1px;
+}
+
 .gallery{
 	display: flex;
 	flex-direction: column;
@@ -257,7 +261,7 @@ header.team{
 	bottom: 30px;
 	width: 100%;
 	padding: 5px 0;
-	line-height: 20px;
+	line-height: 150%;
 	background-color: rgba(151, 47, 47, 0.797);
 	align-self: center;
 }
