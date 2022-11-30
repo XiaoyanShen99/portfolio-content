@@ -95,9 +95,6 @@ img{
 	max-width:100vw;
 }
 
-img:hover{
-	border: 2px dotted black;
-}
 
 @keyframes move{
     from{
@@ -272,10 +269,6 @@ header.team{
 	height: 100%;
 }
 
-.team img:hover{
-	border: 2px dotted white;
-}
-
 
 /* ABOUT style */
 
@@ -314,9 +307,6 @@ img.acn{
 	padding: 15px;
 }
 
-img.acn:hover{
-	border: none;
-}
 
 img.workplace{
 	margin-top: 15px;
@@ -348,6 +338,62 @@ form button{
 	width: auto;
 	justify-self: center;
 }
+
+form input{
+	width: 70%;
+}
+
+
+
+/* Slide */
+
+/* Slideshow container */
+.home .div2 {
+	position: relative;
+	margin: auto;
+}
+
+img.newsroom{
+	width: 100vw;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+  
+  /* Number text (1/3 etc) */
+.numbertext {
+	color: rgb(51, 161, 189);
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+  
+  /* The dots/bullets/indicators */
+.dot {
+	height: 10px;
+	width: 10px;
+	margin: 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+  
+.home .div2 .active {
+	background-color: #717171;
+}
+  
+  /* Fading animation */
+.fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+ }
+
 
 /* =========== */
 /* tablet view */
@@ -561,8 +607,11 @@ form button{
 
 	.about .container{
 		display: grid;
-		grid-template-columns: 1fr 1fr;
-		align-items: stretch;
+		grid-template-columns: 3fr 2fr;
+		align-items: center;
+		width: 75%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	.about .container .div1{
@@ -575,6 +624,17 @@ form button{
 
 	form{
 		width: 35vw;
+	}
+
+	p.acn_intro{
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 20px;
+	}
+
+	img.workplace, form{
+		max-width: 30vw;
 	}
 
 }
