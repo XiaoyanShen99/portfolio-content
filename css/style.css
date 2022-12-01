@@ -773,10 +773,12 @@ img.newsroom{
 
 
 @media (prefers-reduced-motion) {
-	header p, .phil i, .events main i, img.acn {
+	/* header p, .phil i, .events main i, img.acn {
 	 animation:none;
-	}
-
+	} */
+	* {
+		animation: none !important;
+	 }
  }
 
 
