@@ -592,7 +592,7 @@ img.newsroom{
 	}
 
 	form{
-		width: 50vw;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
 	}
 
 }
@@ -754,6 +754,7 @@ img.newsroom{
 
 	form{
 		width: 35vw;
+		grid-template-columns: 1fr 1fr;
 	}
 
 	p.acn_intro{
