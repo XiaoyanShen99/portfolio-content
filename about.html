@@ -27,7 +27,7 @@
 <body>
 	<div class="skip"><a href="#main">Skip to Main Content</a></div>
 	<header>
-		<nav>
+		<nav id="main-menu">
 			<ul>
 				<li><a href="index.html">Home</a></li>
 				<li><a href="team.html">Team</a></li>
@@ -35,6 +35,21 @@
 				<li><a class="active" href="about.html">About</a></li>
 			</ul>
 		</nav>
+		
+		<input type="checkbox" id="hamburger-input" class="burger-shower"/>
+		<label id="hamburger-menu" for="hamburger-input">
+		<nav id="sidebar-menu">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="team.html">Team</a></li>
+				<li><a href="events.html">Events</a></li>
+				<li><a class="active" href="about.html">About</a></li>
+			</ul>
+		</nav>
+		</label>
+
+		<div class="overlay"></div>
+
 	</header>
 
 	<main class="about" id = "main">
