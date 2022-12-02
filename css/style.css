@@ -240,6 +240,7 @@ footer{
 	margin-top: 10px;
 	background-color: black;
 	color: white;
+	padding-left: 10px;
 }
 
 footer p, footer a{
@@ -500,6 +501,14 @@ img.newsroom{
 	main p{
 		font-size: 20px;
 		margin:auto 25px;
+	}
+
+	.home footer i{
+		margin: 0;
+	}
+
+	.home footer p{
+		margin:0 10px;
 	}
 
 	#main-menu {
