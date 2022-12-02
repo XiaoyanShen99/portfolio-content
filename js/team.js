@@ -1,6 +1,12 @@
 //  desktop view, gallery page, image hover effect
+var w = 0;
 
-window.onresize = function(){ location.reload(); }
+window.onload = function(){ w = window.innerWidth;}
+window.onresize = function(){ 
+  if (window.innerWidth != w){
+  location.reload(); 
+  }
+}
 
 let people = document.getElementsByTagName("figure");
 console.log(people.length)
