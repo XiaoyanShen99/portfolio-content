@@ -111,6 +111,10 @@ a:hover {
 	font-weight: bold;
 }
 
+#hamburger-menu a.active {
+	color:white;
+}
+
   
 #hamburger-input:checked + #hamburger-menu #sidebar-menu {
 	visibility: visible;
@@ -328,10 +332,6 @@ header.team{
 	background-image: url("../images/gallery_9_team.png");
 	background-size:cover;
 	align-items: center;
-}
-
-.gallery img:hover{
-	border: solid white 1px;
 }
 
 .gallery{
